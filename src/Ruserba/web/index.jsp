@@ -9,6 +9,8 @@
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
+<%@page import="javax.servlet.*"%>
+<%@page import="javax.servlet.http.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -151,24 +153,7 @@ Search Item: <input type="search" name="search" id="searchbar" >
         } 
     %>
    <a class='slide' href=''><img src="$row["barang.image_path"]."></a>                         
-   <?php
-	$con=mysqli_connect("localhost","root","","test");
-	
-	// Check connection
-	if (mysqli_connect_errno($con))
-	{
-	  $response = (string)"Failed to connect to MySQL: " . mysqli_connect_error();
-	}
-	 else{
-		$sql = "SELECT * FROM barang WHERE Category = 'Grunts' ORDER BY dibeli LIMIT 3";
-		$query = mysqli_query($con,$sql);
-		while($row = mysqli_fetch_array($query))
-		{
-			echo "<a class='slide' href=''><img src=".$row["image_path"]."></a>";
-		}
-	}
-	mysqli_close($con);
-?>
+   
 			</div>
 		</div>
 	</div>
@@ -204,24 +189,7 @@ Search Item: <input type="search" name="search" id="searchbar" >
         } 
     %>
     echo "<a class='slide' href=''><img src=".$row["barang.image_path"]."></a>"; 
-<?php
-	$con=mysqli_connect("localhost","root","","test");
-	
-	// Check connection
-	if (mysqli_connect_errno($con))
-	{
-	  $response = (string)"Failed to connect to MySQL: " . mysqli_connect_error();
-	}
-	 else{
-		$sql = "SELECT * FROM barang WHERE Category = 'Zeon Obsolete Units' ORDER BY dibeli LIMIT 3";
-		$query = mysqli_query($con,$sql);
-		while($row = mysqli_fetch_array($query))
-		{
-			echo "<a class='slide' href=''><img src=".$row["image_path"]."></a>";
-		}
-	}
-	mysqli_close($con);
-?>
+
 			</div>
 		</div>
 	</div>	
@@ -248,7 +216,7 @@ Search Item: <input type="search" name="search" id="searchbar" >
                while(rs.next())
                {
                    %>
-                   <a class='slide' href=''><img src="<% out.print(rs.getString(7)); %>"></img></a>
+                echo "<a class='slide' href=''><img src="$<%out.print(rs.getString(7));%>"></img></a>"
                    <%
             }
         }
@@ -256,25 +224,7 @@ Search Item: <input type="search" name="search" id="searchbar" >
         {
         } 
     %>
-    echo "<a class='slide' href=''><img src=".$row["barang.image_path"]."></a>"; 
-<?php
-	$con=mysqli_connect("localhost","root","","test");
-	
-	// Check connection
-	if (mysqli_connect_errno($con))
-	{
-	  $response = (string)"Failed to connect to MySQL: " . mysqli_connect_error();
-	}
-	 else{
-		$sql = "SELECT * FROM barang WHERE Category = 'Special Paint Version' ORDER BY dibeli LIMIT 3";
-		$query = mysqli_query($con,$sql);
-		while($row = mysqli_fetch_array($query))
-		{
-			echo "<a class='slide' href=''><img src=".$row["image_path"]."></a>";
-		}
-	}
-	mysqli_close($con);
-?>
+
 			</div>
 		</div>
 	</div>
@@ -310,23 +260,7 @@ Search Item: <input type="search" name="search" id="searchbar" >
         } 
     %>
     echo "<a class='slide' href=''><img src=".$row["barang.image_path"]."></a>"; 
-<?php
-	$con=mysqli_connect("localhost","Ver. Ka","","test");
-	
-	// Check connection
-	if (mysqli_connect_errno($con))
-	{
-	  $response = (string)"Failed to connect to MySQL: " . mysqli_connect_error();
-	}
-	 else{
-		$sql = "SELECT * FROM barang WHERE Category = 'Ver. Ka' ORDER BY dibeli LIMIT 3";
-		$query = mysqli_query($con,$sql);
-		while($row = mysqli_fetch_array($query))
-		{
-			echo "<a class='slide' href=''><img src=".$row["image_path"]."></a>";
-		}
-	}
-	mysqli_close($con);
+
 ?>
 			</div>
 		</div>
