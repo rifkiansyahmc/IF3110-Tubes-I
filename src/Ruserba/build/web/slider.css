@@ -1,0 +1,474 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 26, 2013, 10:05:08 PM
+    Author     : ACER
+*/
+
+#slider-wrapper{
+			width: 500px;
+			height: 200px;
+			margin: 50px auto;
+			position: relative;
+			margin-bottom: 0px;
+			background: rgba(0,0,0,0.5);
+			overflow: hidden;
+		}
+		
+				#s1{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: -36px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black
+				}
+				
+				#s2{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: -12px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black;
+				}
+				
+				#s3{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: 12px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black;
+				}
+				
+				
+				#s1:hover, #s2:hover, #s3:hover{ opacity: 1;}
+				
+			.inner-wrapper{
+				width: 500px;
+				height: 200px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin-bottom: 0px;
+				overflow: hidden;
+			}
+				.control{ display: none;}
+				
+				#Slide1:checked ~ .overflow-wrapper{ margin-left: 0%; }
+				#Slide2:checked ~ .overflow-wrapper{ margin-left: -100%; }
+				#Slide3:checked ~ .overflow-wrapper{ margin-left: -200%; }
+				
+				#Slide1:checked + #s1 { opacity: 1; }
+				#Slide2:checked + #s2 { opacity: 1; }
+				#Slide3:checked + #s3 { opacity: 1; }
+				
+			.overflow-wrapper{
+				width: 400%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow-y: hidden;
+				z-index: 1;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+			
+				.slide img{
+					width: 25%;
+					float: left;
+				}
+	
+#slider-wrapper2{
+			width: 500px;
+			height: 200px;
+			margin: 50px auto;
+			position: relative;
+			margin-bottom: 0px;
+			background: rgba(0,0,0,0.5);
+			overflow: hidden;
+		}
+		
+				#s12{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: -36px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black
+				}
+				
+				#s22{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: -12px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black;
+				}
+				
+				#s32{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: 12px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black;
+				}
+				
+				
+				#s12:hover, #s22:hover, #s32:hover{ opacity: 1;}
+				
+			.inner-wrapper2{
+				width: 500px;
+				height: 200px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin-bottom: 0px;
+				overflow: hidden;
+			}
+				.control2{ display: none;}
+				
+				#Slide12:checked ~ .overflow-wrapper2{ margin-left: 0%; }
+				#Slide22:checked ~ .overflow-wrapper2{ margin-left: -100%; }
+				#Slide32:checked ~ .overflow-wrapper2{ margin-left: -200%; }
+				
+				#Slide12:checked + #s12 { opacity: 1; }
+				#Slide22:checked + #s22 { opacity: 1; }
+				#Slide32:checked + #s32 { opacity: 1; }
+				
+			.overflow-wrapper2{
+				width: 400%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow-y: hidden;
+				z-index: 1;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+			
+				.slide2 img{
+					width: 25%;
+					float: left;
+				}
+				
+#slider-wrapper3{
+			width: 500px;
+			height: 200px;
+			margin: 50px auto;
+			position: relative;
+			margin-bottom: 0px;
+			background: rgba(0,0,0,0.5);
+			overflow: hidden;
+		}
+		
+				#s13{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: -36px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black
+				}
+				
+				#s23{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: -12px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black;
+				}
+				
+				#s33{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: 12px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black;
+				}
+				
+				
+				#s13:hover, #s23:hover, #s33:hover{ opacity: 1;}
+				
+			.inner-wrapper3{
+				width: 500px;
+				height: 200px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin-bottom: 0px;
+				overflow: hidden;
+			}
+				.control3{ display: none;}
+				
+				#Slide13:checked ~ .overflow-wrapper3{ margin-left: 0%; }
+				#Slide23:checked ~ .overflow-wrapper3{ margin-left: -100%; }
+				#Slide33:checked ~ .overflow-wrapper3{ margin-left: -200%; }
+				
+				#Slide13:checked + #s13 { opacity: 1; }
+				#Slide23:checked + #s23 { opacity: 1; }
+				#Slide33:checked + #s33 { opacity: 1; }
+				
+			.overflow-wrapper3{
+				width: 400%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow-y: hidden;
+				z-index: 1;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+			
+				.slide3 img{
+					width: 25%;
+					float: left;
+				}
+				
+#slider-wrapper4{
+			width: 500px;
+			height: 200px;
+			margin: 50px auto;
+			position: relative;
+			margin-bottom: 0px;
+			background: rgba(0,0,0,0.5);
+			overflow: hidden;
+		}
+		
+				#s14{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: -36px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black
+				}
+				
+				#s24{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: -12px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black;
+				}
+				
+				#s34{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: 12px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black;
+				}
+				
+				
+				#s14:hover, #s24:hover, #s34:hover{ opacity: 1;}
+				
+			.inner-wrapper4{
+				width: 500px;
+				height: 200px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin-bottom: 0px;
+				overflow: hidden;
+			}
+				.control4{ display: none;}
+				
+				#Slide14:checked ~ .overflow-wrapper4{ margin-left: 0%; }
+				#Slide24:checked ~ .overflow-wrapper4{ margin-left: -100%; }
+				#Slide34:checked ~ .overflow-wrapper4{ margin-left: -200%; }
+				
+				#Slide14:checked + #s14 { opacity: 1; }
+				#Slide24:checked + #s24 { opacity: 1; }
+				#Slide34:checked + #s34 { opacity: 1; }
+				
+			.overflow-wrapper4{
+				width: 400%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow-y: hidden;
+				z-index: 1;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+			
+				.slide4 img{
+					width: 25%;
+					float: left;
+				}
+				
+#slider-wrapper5{
+			width: 500px;
+			height: 200px;
+			margin: 50px auto;
+			position: relative;
+			margin-bottom: 0px;
+			background: rgba(0,0,0,0.5);
+			overflow: hidden;
+		}
+		
+				#s15{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: -36px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black
+				}
+				
+				#s25{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: -12px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black;
+				}
+				
+				#s35{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					margin-left: 12px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					color:black;
+				}
+				
+				
+				#s15:hover, #s25:hover, #s35:hover{ opacity: 1;}
+				
+			.inner-wrapper5{
+				width: 500px;
+				height: 200px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin-bottom: 0px;
+				overflow: hidden;
+			}
+				.control5{ display: none;}
+				
+				#Slide15:checked ~ .overflow-wrapper5{ margin-left: 0%; }
+				#Slide25:checked ~ .overflow-wrapper5{ margin-left: -100%; }
+				#Slide35:checked ~ .overflow-wrapper5{ margin-left: -200%; }
+				
+				#Slide15:checked + #s15 { opacity: 1; }
+				#Slide25:checked + #s25 { opacity: 1; }
+				#Slide35:checked + #s35 { opacity: 1; }
+				
+			.overflow-wrapper5{
+				width: 400%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow-y: hidden;
+				z-index: 1;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+			
+				.slide5 img{
+					width: 25%;
+					float: left;
+				}
